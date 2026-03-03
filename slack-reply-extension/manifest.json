@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Slack Reply Draft Button (Safe)",
+    "version": "0.2.0",
+    "description": "Adds a button to draft a reply via local BFF (does not auto-send).",
+    "permissions": ["storage"],
+    "host_permissions": ["https://app.slack.com/*", "http://localhost:8787/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://app.slack.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }

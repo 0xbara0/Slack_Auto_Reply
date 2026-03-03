@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files (secrets)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# Runtime / temp files
+*.pid
+*.pid.lock
+*.tmp
+*.temp
+
+# Build artifacts
+coverage/
+dist/
+build/
+
+# Editors
+.vscode/
+.idea/
+
+# Local archives
+*.zip
+
+Zenn/
